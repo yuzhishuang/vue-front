@@ -21,7 +21,7 @@ export default {
   components: {
   },
   mounted () {
-    axios.get('/api/users').then(response => {
+    axios.get('http://www.provenr.cn:3000/api/users').then(response => {
       this.users = response.data
     })
   },
