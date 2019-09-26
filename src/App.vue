@@ -21,7 +21,7 @@ export default {
   components: {
   },
   mounted () {
-    axios.get('http://localhost:3000/api/users').then(response => {
+    axios.get('/api/users').then(response => {
       this.users = response.data
     })
   },
